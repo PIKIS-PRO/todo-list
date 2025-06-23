@@ -63,3 +63,33 @@ input[type="text"], input[type="date"], textarea, select {
     color: var(--text-dark);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+textarea { resize: vertical; min-height: 100px; }
+
+/* Agrupación del radio y checkbox */
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.radio-group input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+fieldset { margin-top: 25px; padding: 0; border: none; }
+legend {
+    font-weight: bold;
+    color: var(--text-medium);
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
