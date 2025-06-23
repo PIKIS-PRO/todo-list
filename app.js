@@ -44,3 +44,15 @@ document.getElementById('tareaForm').addEventListener('submit', function(e) {
 
     document.getElementById('listaTareas').appendChild(tarjeta);
 
+    // Para tener colores en las tres opciones de prioridad
+
+    function obtenerColorPrioridad(prioridad){
+        switch (prioridad){
+            case 'Urgente':
+            return '#dc3545';
+        }
+    }
+
+    // Aqui se reinicia el formulario
+    document.getElementById('tareaForm').reset();
+});
